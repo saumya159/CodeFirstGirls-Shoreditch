@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<title>Shoreditch Hot Spots </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Places</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16">Mail</div>
+    <div class="w3-center w3-padding-16">Places To See</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="../imgs/quaker.jpg " alt="Quaker Street Cafe" style="width:100%">
+      <h3>Quaker Street Cafe</h3>
+      <p>Whether you need to start your day with coffee (like me!), or you want to grab lunch while ticking off all the free things to do in Shoreditch, then you should do it at Quaker Street Cafe! </p>
+    </div>
+    <div class="w3-quarter">
+      <img src="../imgs/petticoat lane.jpg" alt="Pettocoat Lane" style="width:100%">
+      <h3>Petticoat Lane </h3>
+      <p>Petticoat Lane market has over a thousand stalls, specialising in clothes and household goods. The bulk of the market falls within the Tower Hamlets area with Middlesex Street only in the City.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="../imgs/Ballie Ballerson-BallPit_Bar.jpeg" alt="Ballie Ballerson" style="width:100%">
+      <h3>Ballie Ballerson</h3>
+      <p>Welcome to the EPIC original ball pit cocktail bar! The incredible Ballie Ballerson is like no other bar you’ve ever been to. A world famous venue featuring over ONE MILLION balls, it will magic you right back to the fun of the playground like a ball pit time machine. Whether you’re being a baller in our VIP section, drinking Dibbie Dabbersons on the dance floor, or making a name for yourself in one of the ball pits, it’s an experience that will keep you smiling for hours and have your Insta feed begging for more.</p>
+    </div>
+    <div class="">
+      <img src="../imgs/kingly_court.jpg" alt="Kingly Court" style="width:100%">
+      <h3>Kingly Court</h3>
+      <p>Kingly Court £-££
+
+        Carnaby’s iconic  is a three-storey alfresco food and dining destination in the heart of London’s West End. The unique food hub brings 21 of the best international concept restaurants, bars and cafés situated in a vibrant courtyard, which is open air throughout the summer months and covered in the winter.</p>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="../imgs/beigelbake.jpg" alt="Beigel Bake" style="width:100%">
+      <h3>Beigel Bake </h3>
+      <p> Open 24 hours a day every day, including Christmas Day(!), Beigel Bake is an East-London institution. And it has been since it opened its doors in 1974. Their bagels are ridiculously cheap, ridiculously tasty, and the service is ridiculously friendly!</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="../imgs/dennisserver.jpg" alt="Dennis Server" style="width:100%">
+      <h3>Dennis Server</h3>
+      <p> Billed as a “still-life drama”, the five-story house was created by the previous owner Dennis Severs and offers a historical imagination of what life would have been like for a family of Huguenot silk weavers. </p>
+    </div>
+    <div class="w3-quarter">
+      <img src= "../imgs/ckc.jpg" alt="CerealKiller" style="width:100%">
+      <h3>Cereal Killer Cafe</h3>
+      <p>Among the decor are novelty cereal boxes, vintage milk bottles and other cereal related memorabilia. Topping off the old-school vibe is music from the 80s and 90s.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="../imgs/cupcakes and shht.jpg" alt="Cupcakes and shh" style="width:100%">
+      <h3>Cupcakes and shht</h3>
+    <p>Very little cute cafe, they make delicious home made dishes, vegan options are very tasty too, a great find in the outskirts of shoreditch</p>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="about">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3>About Us</h3><br>
+    <img src="/w3images/chef.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+    <div class="w3-padding-32">
+      <h6><i>Boujee travel around Shoreditch</i></h6>
+      <p></p>
+    </div>
+  </div>
+  <hr>
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>FOOTER</h3>
+      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>BLOG POSTS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Lorem</span><br>
+          <span>Sed mattis nunc</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Ipsum</span><br>
+          <span>Praes tinci sed</span>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third w3-serif">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dinner</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Salmon</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">France</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drinks</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Flavors</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cuisine</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Chicken</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dressing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fried</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fish</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Duck</span>
+      </p>
+    </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
