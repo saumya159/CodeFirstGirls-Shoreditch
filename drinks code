@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<title>Drinks </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+  <!-- add hyperlink of food instead of #food--> <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>
+  <!-- add hyperlink of places instead of #places --> <a href="#places" onclick="w3_close()" class="w3-bar-item w3-button">Places</a>
+  <a href="/Users/tanyarahman/Desktop/CODEFIRST/Group Project - travelguide/drinks code.html" onclick="w3_close()" class="w3-bar-item w3-button">Drinks</a>
+  <a href="/Users/tanyarahman/Desktop/CODEFIRST/Group Project - travelguide/mailinglist.html" onclick="w3_close()" class="w3-bar-item w3-button">Mail</a>
+  
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    
+    <div class="w3-center w3-padding-16"><b><i>Going out for drinks?</i></b></div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1500px;margin-top:150px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="drinks">
+    <div class="w3-third">
+      <img src="imgs/Cahoots.jpg" alt="Cahoots" style="width:100%">
+      <h3><b>Cahoots</b></h3>
+      <p>There’s nowhere better to get Blitzed than Cahoots, the Underground-themed bar where the clocks stopped in 1946. Hidden deep beneath the streets of Soho, an underground den invites scoundrels of all stripes to drink cocktails and dance along to swing music.  </p>
+    </div>
+    <div class="w3-third">
+      <img src="imgs/naminobuhotel.jpg" alt="Nami @ Nobu Hotel" style="width:100%">
+      <h3><b>Nami at Nobu Hotel Shoreditch</b> </h3>
+      <p>Paying homage to the creative vibrancy of its Shoreditch location, NAMI bar features a selection of Japanese street food dishes with Nobu quality. NAMI diners can also expect a best-in-class cocktail and mocktail offerings, in addition to beer, Nihonshu sake and whiskey.</p>
+    </div>
+    <div class="w3-third">
+      <img src="imgs/nightjar.jpg" alt="night jar" style="width:100%">
+      <h3><b>Nightjar</b></h3>
+      <p>Perched on the edge of Shoreditch (near Old Street), Night Jar is an epic spot that has some old-school glamour to it. Once here, head inside to catch their live music and sample the pre-prohibition cocktails they’ve created</p>
+    </div>
+    
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-third">
+      <img src="imgs/calloohcallay.jpg" alt="Calloh Callay" style="width:100%">
+      <h3><b>Callooh Callay</b> </h3>
+      <p> Callooh Callay is an Alice in Wonderland-themed bar with a long menu of innovative cocktails. It works well for a date or a nightcap!</p>
+    </div>
+    <div class="w3-third">
+      <img src="imgs/demonwise.jpg" alt="Demon, wise & partners" style="width:100%">
+      <h3><b>Demon, Wise & Partners</b></h3>
+      <p> Demon, Wise & Partners is a classic basement cocktail bar in the heart of The City. It serves exceptional cocktails in a relaxed but refined atmosphere. It is seated only, so book ahead on busier nights - and be prepared to lose track of time as it's open late too!</p>
+    </div>
+    <div class="w3-third">
+      <img src="imgs/cocktailtrading.jpg" alt="The Cocktail Trading Company" style="width:100%">
+      <h3><b>The Cocktail Trading Co.</b></h3>
+      <p>Perched on Bethnal Green Road, the Cocktail Trading Company is easily one of the best bars in Shoreditch for the cocktails alone. Once you head inside, you’ll see how experimental their cocktail list is. </p>
+    </div>
+    
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="about">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3>About Us</h3><br>
+    
+    <div class="w3-padding-32">
+      <h6><i>Boujee travel around Shoreditch</i></h6>
+      <p></p>
+    </div>
+  </div>
+  <hr>
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>FOOTER</h3>
+      <p></p>
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>BLOG POSTS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+        
+          <span class="w3-large">Food</span><br>
+          <!-- maybe hyperlink food page here-->
+        </li>
+        <li class="w3-padding-16">
+          
+          <span class="w3-large">Places</span><br>
+         <!-- maybe hyperlink places to see page here-->
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third w3-serif">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">London</span> 
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drinks</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Romantic</span> 
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Shoreditch</span> 
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cocktails</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Going out</span> 
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Datenight</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Club</span>
+      </p>
+    </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
