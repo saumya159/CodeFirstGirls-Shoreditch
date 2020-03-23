@@ -11,7 +11,6 @@
       /* The width is the width of the web page */
     }
   </style>
-  <body style="background-color:powderblue;"></body>
   <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,16 +20,10 @@
 <body>
 
   <!-- Top menu -->
-  <img src align="imgs/logo.jpg" alt="Logo" style="width: 100px;">
-  <div class="w3-top">
-    <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
-      <h1>London Is Calling, And I Must Go</h1>
-      <div align="right" class="w3-right w3-padding-16">
-        <a href="html/subscribe.html">
-          <i class="fa fa-envelope-o" style="font-size:48px;color:aqua">
-          </i></a>
-      </div>
-    </div>
+  <div id='title-container'>
+    <img src="imgs/logo.png" alt="Logo" style="width: 10%; height:10%">
+    <h1 style="flex-grow:2">London Is Calling, And I Must Go</h1>
+    <a href="html/subscribe.html" class="button-subscribe">🔔Subscribe</a>
   </div>
   <!--The div element for the map -->
   <div id="map"></div>
@@ -46,21 +39,21 @@
 
   <div id="wrapper">
     <div class="container">
-      <img src="imgs/boxpark_donuts.jpeg" alt="" />
+      <img src="imgs/boxpark_donuts.jpeg" alt="" class="img-front-page" />
       <p class="title">Food</p>
       <div class="overlay"></div>
       <div class="button"><a href="html/food.html"> Food </a></div>
     </div>
 
     <div class="container">
-      <img src="imgs/quaker.jpg" alt="" />
+      <img src="imgs/quaker.jpg" alt="" class="img-front-page" />
       <p class="title">Places</p>
       <div class="overlay"></div>
       <div class="button"><a href="html/places.html"> Places </a></div>
     </div>
 
     <div class="container">
-      <img src="imgs/shoreditchbar.jpg" alt="" />
+      <img src="imgs/shoreditchbar.jpg" alt="" class="img-front-page" />
       <p class="title">Drinks</p>
       <div class="overlay"></div>
       <div class="button"><a href="html/drinks.html"> Drinks </a></div>

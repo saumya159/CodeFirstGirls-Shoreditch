@@ -7,11 +7,18 @@ h1 {
     
 }
 h3 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Karma', sans-serif;
     font-weight: 600;
     margin: 0px;
 }
-
+h4 {
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  
+}
 .container {
   position: relative;
   margin-top: 50px;
@@ -35,12 +42,16 @@ h3 {
   background: rgba(0, 0, 0, .3);
 }
 
-img {
+.img-front-page {
   width: 500px;
   height: 300px;
   left: 0;
 }
 
+img {
+  width: 500px;
+  left: 0;
+}
 .title {
   font-family: 'Lato', sans-serif;
   font-style: italic;
@@ -60,7 +71,6 @@ img {
 .container:hover .title {
   top: 90px;
 }
-
 
 .button {
   font-family: 'Lato', sans-serif;
@@ -92,4 +102,128 @@ img {
   justify-content: center;
 }
 
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
 
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.w3-padding-16 {
+  padding-top: 16px!important;
+  padding-bottom: 16px!important;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#title-container {
+  padding-top: 16px!important;
+  padding-bottom: 16px!important;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 50px
+}
+
+  
+.button-subscribe {
+	padding: 10px 5px 13px;
+	background: #03b999;
+  border:  2px solid #03b999;
+  color: white;
+  font-size: 20px;
+  letter-spacing: .09rem;
+  width: 10%;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  border-radius:7px;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+.button-subscribe:hover {
+  opacity: 0.7;
+}
+
+form {
+  font-family: Arial;
+  text-align: center;
+}
+.form-div{
+  text-align: center;
+}
+
+input[type=text],
+input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+.subscribe-container {
+  position: relative;
+  margin-top: 50px;
+  width: 500px;
+  height: 300px;
+  margin-right: 10px;
+  display: inline-block;
+}
