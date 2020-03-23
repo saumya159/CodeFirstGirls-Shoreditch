@@ -2,16 +2,110 @@ var markers = [
     {
         "lat": 51.523539,
         "lng": -0.075957,
-        "html": "box-park.html",
         "title": "BOXPARK Shoreditch",
-        "stars": 4
+        "stars": 2
     },
     {
         "lat": 51.5161957,
         "lng": -0.0809454,
-        "html": "duck-and-waffle.html",
         "title": "Duck and Waffle",
         "stars": 5
+    },
+    {
+        "lat": 51.5124626,
+        "lng": -0.1360826,
+        "title": "Berwick Market",
+        "stars": 3
+    },
+    {
+        "lat": 51.5227523,
+        "lng": -0.0843406,
+        "title": "Breakfast Club",
+        "stars": 3
+    },
+    {
+        "lat": 51.5189231,
+        "lng": -0.0859158,
+        "title": "Yauatcha",
+        "stars": 3
+    },
+    {
+        "lat": 51.5139289,
+        "lng":-0.1337045,
+        "title": "Chotto Matte",
+        "stars": 3
+    },
+    {
+        "lat": 51.5224915,
+        "lng":-0.0825905,
+        "title":"Quaker Street Cafe",
+        "stars": 1
+    },
+    {
+        "lat":51.5163688,
+        "lng":-0.0785026,
+        "title":"Petticoat Lane",
+        "stars": 2
+    },
+    {
+        "lat":51.5256852,
+        "lng":-0.0826429,
+        "title":"Ballie Ballerson",
+        "stars": 1
+    },
+    {
+        "lat":51.5245028,
+        "lng":-0.073942,
+        "title":"Biegel Bake",
+        "stars": 1
+    },
+    {
+        "lat":51.5208912,
+        "lng":-0.0799096,
+        "title":"Dennis Server",
+        "stars": 1
+    },
+    {
+        "lat":51.5239206,
+        "lng":-0.0738005,
+        "title":"Cereal Killer Cafe",
+        "stars": 2
+    },
+    {
+        "lat":51.5124824,
+        "lng":-0.1407383,
+        "title":"Cahoots",
+        "stars": 3
+    },
+    {
+        "lat":51.5250456,
+        "lng":-0.0850524,
+        "title":"Nami-Nobu Hotel",
+        "stars": 4
+    },
+    {
+        "lat":51.5265294,
+        "lng":-0.0899648,
+        "title":"Nightjar",
+        "stars": 3
+    },
+    {
+        "lat":51.5262938,
+        "lng":-0.0820903,
+        "title":"Callooh Callay",
+        "stars": 2
+    },
+    {
+        "lat":51.5150573,
+        "lng":-0.0883021,
+        "title":"Demon,Wise & Partner",
+        "stars": 3
+    },
+    {
+        "lat":51.5243756,
+        "lng":-0.0745705,
+        "title":"The Cocktail Trading Co",
+        "stars": 2
     }
 ]
 
@@ -31,7 +125,6 @@ function initMap() {
     var map = new google.maps.Map(
         document.getElementById('map'), { zoom: 14, center: shoreditch_location}
           );
-    var infowindow;
     // Add all the markers to the map
     markers.forEach(function (marker_info, index) {
         var marker = new google.maps.Marker({
@@ -42,15 +135,11 @@ function initMap() {
 
         var contentString = createMarkerInfoString(marker_info);
 
-
-        marker.addListener('click', function () {
-            if (infowindow) {
-                infowindow.close();
-            }
-            infowindow = new google.maps.InfoWindow({
-                content: contentString
-            });
-            infowindow.open(map, marker);
+        infowindow = new google.maps.InfoWindow({
+            content: contentString
         });
+        infowindow.open(map, marker);
+        
+    
     });
 }

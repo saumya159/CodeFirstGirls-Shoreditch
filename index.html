@@ -1,52 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-       /* Set the size of the div element that contains the map */
-      #map {
-        height: 400px;  /* The height is 400 pixels */
-        width: 100%;  /* The width is the width of the web page */
-       }
-    </style>
-    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel = "stylesheet" type = "text/css" href = "css/style.css" />
- </head>
-  </head>
-  <body>
-    <h1>London Is Calling, And I Must Go</h1>
-    <!--The div element for the map -->
-    <div id="map"></div>
-    <!--Load the API from the specified URL
+
+<head>
+  <style>
+    /* Set the size of the div element that contains the map */
+    #map {
+      height: 400px;
+      /* The height is 400 pixels */
+      width: 100%;
+      /* The width is the width of the web page */
+    }
+  </style>
+  <body style="background-color:powderblue;"></body>
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+</head>
+
+<body>
+
+  <!-- Top menu -->
+  <img src align="imgs/logo.jpg" alt="Logo" style="width: 100px;">
+  <div class="w3-top">
+    <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+      <h1>London Is Calling, And I Must Go</h1>
+      <div align="right" class="w3-right w3-padding-16">
+        <a href="html/subscribe.html">
+          <i class="fa fa-envelope-o" style="font-size:48px;color:aqua">
+          </i></a>
+      </div>
+    </div>
+  </div>
+  <!--The div element for the map -->
+  <div id="map"></div>
+  <!--Load the API from the specified URL
     * The async attribute allows the browser to render the page while the API loads
     * The key parameter will contain your own API key (which is not needed for this tutorial)
     * The callback parameter executes the initMap() function
     -->
-    <script src="js/map.js"></script>
-    <script async defer 
+  <script src="js/map.js"></script>
+  <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=ADD_KEY&callback=initMap">
     </script>
 
   <div id="wrapper">
-<div class="container">
-  <img src="imgs/boxpark_donuts.jpeg" alt="" />
-  <p class="title">Food</p>
-  <div class="overlay"></div>
-  <div class="button"><a href="html/myfood.html"> BUTTON </a></div>
-</div>
+    <div class="container">
+      <img src="imgs/boxpark_donuts.jpeg" alt="" />
+      <p class="title">Food</p>
+      <div class="overlay"></div>
+      <div class="button"><a href="html/food.html"> Food </a></div>
+    </div>
 
-<div class="container">
-  <img src="imgs/kingly_court.jpg" alt="" />
-  <p class="title">Places</p>
-  <div class="overlay"></div>
-  <div class="button"><a href="html/places.html"> BUTTON </a></div>
-</div>
+    <div class="container">
+      <img src="imgs/quaker.jpg" alt="" />
+      <p class="title">Places</p>
+      <div class="overlay"></div>
+      <div class="button"><a href="html/places.html"> Places </a></div>
+    </div>
 
-<div class="container">
-  <img src="imgs/shoreditchbar.jpg" alt="" />
-  <p class="title">Drinks</p>
-  <div class="overlay"></div>
-  <div class="button"><a href="#"> BUTTON </a></div>
-</div>
-</div>
-
-
+    <div class="container">
+      <img src="imgs/shoreditchbar.jpg" alt="" />
+      <p class="title">Drinks</p>
+      <div class="overlay"></div>
+      <div class="button"><a href="html/drinks.html"> Drinks </a></div>
+    </div>
+  </div>
