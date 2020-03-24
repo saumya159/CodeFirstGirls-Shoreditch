@@ -59,16 +59,19 @@
 
   <body>
       <form action="/action_page.php">
-        <div class="subscribe-container" style="background-color:white">
+        <div class="subscribe-container" style="background-color:azure">
           <input type="text" placeholder="Name" name="name" required>
           <input type="text" placeholder="Email address" name="mail" required>
           <div>
             <input type="checkbox" checked="checked" name="subscribe">Sign up to our daily blog.
           </div>
-            <input type="submit" value="Subscribe">
+          <input type="input" onclick="clickAlert()" value="Subscribe" style="background-color:rgb(226, 196, 255);">
         </div>
-
       </form>
   </body>
-
 </html>
+<script>
+  function clickAlert() {
+    alert("Subscription complete! London is calling, Check your email!");
+}
+</script>
