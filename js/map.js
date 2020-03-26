@@ -121,25 +121,21 @@ function createMarkerInfoString(marker_info) {
 // Initialize and add the map
 function initMap() {
     // The location of shoreditch
-    var shoreditch_location = { lat: 51.5244484, lng: -0.0800882 };
-    var map = new google.maps.Map(
-        document.getElementById('map'), { zoom: 16, center: shoreditch_location }
-    );
+    var map = L.map('map').setView([51.524448, -0.0800882], 15);
+
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        subdomains: 'abcd',
+        maxZoom: 19
+    }).addTo(map);
+
     // Add all the markers to the map
     markers.forEach(function (marker_info, index) {
-        var marker = new google.maps.Marker({
-            position: marker_info,
-            map: map,
-            animation: google.maps.Animation.DROP,
-        });
-
         var contentString = createMarkerInfoString(marker_info);
-
-        infowindow = new google.maps.InfoWindow({
-            content: contentString
-        });
-        infowindow.open(map, marker);
-
-
+        L.marker([marker_info['lat'], marker_info['lng']]).addTo(map)
+            .bindPopup(contentString)
+            .openPopup();
     });
 }
+initMap();
